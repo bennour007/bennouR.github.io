@@ -1,0 +1,11 @@
+name: "Bennour"
+output_dir: "."
+navbar:
+  title: "Bennou'R"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Research"
+      href: research.html

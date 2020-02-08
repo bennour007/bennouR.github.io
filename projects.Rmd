@@ -1,0 +1,17 @@
+---
+title: "Projects"
+output: html_document
+---
+
+I will be publishing here (for fun) some of the work I was or I am doing, in case you are an employer and willing to hire me, you can contact me directly and will be willing to share more advanced work.
+
+### Tidy Tuesday:
+I learned about this project by watching Dave Robinson's cast on the data he analyses with R, So I started doing the same thing, the only difference, is that he did 10 and maybe hundreds of such analysis, but the videos take coding skills, and care for elegance solution to the next level.
+
+I  propose these notebooks:
+
+* [Power lifters contests](docs/tt/powerlifters.html)
+  
+* [New zeland bird of the year election](docs/tt/nz_birds.html)
+
+PS : You will find the the link to the data used in each notebook, you may also find the TT repo [here]("https://github.com/rfordatascience/tidytuesday")

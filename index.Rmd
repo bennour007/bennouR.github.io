@@ -1,0 +1,28 @@
+---
+title: "Hello!"
+output: html_document
+---
+\
+\
+<img src="docs/photo.jpg" style="width:25%; margin-right: 20px" align="left">
+\
+\
+\
+My name is mohamed Hsin Bennour, I am currently a student at Tunis Business School,doing my Master's in Business analytics.
+
+Though my undergrad studies were about economics, statistics, and econometrics, I found myself pushing harder and harder to gain knowledge on machine learning and advanced statistics and especially tools of the information: programming languages. 
+
+So here I am trying to build my website from scratch since google doesn't really help you with that. 
+Anyways, I hope you find my humble online home comfortable enough for your taste.
+
+If you want to know more about me, you can just click here to get my [resume](docs/resume.pdf).
+
+\
+\
+\
+\
+\
+\
+
+### [NEW ARTICLE](docs/elections2014/report.html)
+2014 elections report with mainland votes
