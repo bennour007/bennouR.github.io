@@ -1,2 +1,2 @@
-# bennouR.io
+# bennouR.github.io
 personal web site
