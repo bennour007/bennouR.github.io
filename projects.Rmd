@@ -1,6 +1,9 @@
 ---
 title: "Projects"
-output: html_document
+output: 
+  html_document:
+    highlight: tango
+    theme: readable
 ---
 
 I will be publishing here (for fun) some of the work I was or I am doing, in case you are an employer and willing to hire me, you can contact me directly and will be willing to share more advanced work.

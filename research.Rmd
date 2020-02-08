@@ -1,6 +1,9 @@
 ---
 title: "Data oriented Democracy"
-output: html_document
+output: 
+  html_document:
+    highlight: tango
+    theme: readable
 ---
 
 ### Hello!
