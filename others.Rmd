@@ -12,4 +12,3 @@ knitr::opts_chunk$set(echo = TRUE)
 
 - [corruption](docs/berkleyapp.html).
 
-- [stat150](https://bennour-med-hsin.shinyapps.io/new_folder/).

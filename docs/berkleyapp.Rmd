@@ -23,9 +23,9 @@ Helping with understanding the behavior regarding corruption and especially brib
 
 I regard this research with tremendous rigour and diligence, as it is multidisciplinary, depending on skills in analyzing economical, statistical, social, and psychological data, which makes collecting this data efficiently and with the best quality possible a challenging job.
 
-This is my personal website portal, which I have constructed a while ago, it contains links to my [GitHub](https://github.com/bennour007?tab=repositories) repositories where you can find code samples of my previous and current projects, as well as some drafts to some of the articles, especially on the [elections](https://bennour007.github.io/bennouR.github.io/docs/elections2014/report.html) [project](https://bennour007.github.io/bennouR.github.io/research.html).
+This is my personal website portal, which I have constructed a while ago, it contains links to my ["GitHub"](https://github.com/bennour007?tab=repositories) repositories where you can find code samples of my previous and current projects, as well as some drafts to some of the articles, especially on the ["elections"](https://bennour007.github.io/bennouR.github.io/docs/elections2014/report.html) ["project"](https://bennour007.github.io/bennouR.github.io/research.html).
 
-You can reach me on +216 26260993 and on my email hsin.bennour@gmail.com
+You can reach me on +216 26260993 and on my email hsin.bennour@gmail.com, you can also find my resume [here](docs/resume.pdf).
 
 Thank you for your time and consideration, looking forward to speaking with you directly to discuss this opportunity as well as my motivation and skills.
 

@@ -41,4 +41,3 @@ PS1: The process file is called ["wrangle_2.Rmd"](https://github.com/bennour007/
 
 PS2: Some final files migh contain an additional row, summing up all the columns one by one.
 
-
