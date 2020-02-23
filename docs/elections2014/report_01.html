@@ -9,9 +9,8 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Bennour Mohamed Hsin" />
+<meta name="author" content="BMH" />
 
-<meta name="date" content="2020-02-07" />
 
 <title>Tunisian Elections with code</title>
 
@@ -2258,8 +2257,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Tunisian Elections with code</h1>
-<h4 class="author">Bennour Mohamed Hsin</h4>
-<h4 class="date">7 February 2020</h4>
+<h4 class="author">BMH</h4>
 
 </div>
 
@@ -2270,9 +2268,9 @@ $(document).ready(function () {
 <p>At first I wasn’t really overwhelmed by the process nor the wrok that needs to be done it self, however, the further I dive into some technical issues with my code, the more I realize <em>THIS SUCKS BIG TIME</em>.</p>
 <p>I mean honestly, most of the problems I ran into were related to low quality data. Anyways, crying over the incompetence of isie data mangers won’t change anything now.</p>
 <p>Basically what took me too long was the fact that I was really confused in this project with R, relearning python and cleaning the rust out of my memory was really time consuming, even though I still need to do lots of work in order to upgrade my coding skills and algorithmic thinking, in addition some tweaks may be needed to make the code not only functional the way it is now, but also, elegant and optimal.</p>
-<p>Now that I am more comfortable in the pythonic world of dunamism and ease, <em>THE COMMUNITY REALLY NEEDS TO FIND A WAY TO MIMIC RMD</em>. while this entire websire is written in Rmd with Rstudio, I haven’t come cross any reporting tool as elegant, and pertinent as Rmd and the knitr package in R.</p>
+<p>Now that I am more comfortable in the pythonic world of dynamism and ease, <em>THE COMMUNITY REALLY NEEDS TO FIND A WAY TO MIMIC RMD</em>. while this entire website is written in Rmd with Rstudio, I haven’t come cross any reporting tool as elegant, and pertinent as Rmd and the knitr package in R.</p>
 <p>In what follows we will discuss some functionalities, some methodology and define few concepts for the reader who has no experience in the given matter.</p>
-<p>I will not show all the code I used in this report however it will be here in my rep, for those who are going to check it out please leave me a feedback.</p>
+<p>I will not show all the code I used in this report however it will be <a href="https://github.com/bennour007/elections">here</a> in my rep, for those who are going to check it out please leave me a feedback.</p>
 <p>I will be dividing the work into phases, each phase will be focusing on a specific task over the data.</p>
 <div id="defining-the-files-directory-and-paths" class="section level3">
 <h3>Defining the files directory and paths</h3>
@@ -2287,7 +2285,7 @@ $(document).ready(function () {
 </div>
 <div id="phase-create-a-preperation-function" class="section level3">
 <h3>Phase : Create a preperation function</h3>
-<p>We Have to prepare the data in ‘dfs’ to get the total votes for each list, however this is not the only thing that we need to do, we also have to define which depend on the quota calculation process.</p>
+<p>We Have to prepare the data in ‘dfs’ to get the total votes for each list,</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># this function takes the dataframe sums row wise for each candidate </span></a>
 <a class="sourceLine" id="cb1-2" data-line-number="2"><span class="co"># and return list name and the total votes</span></a>
 <a class="sourceLine" id="cb1-3" data-line-number="3"><span class="kw">def</span> prep(df):</a>
@@ -2297,7 +2295,13 @@ $(document).ready(function () {
 </div>
 <div id="phase-define-and-prepare-hare-quota-arguments" class="section level3">
 <h3>Phase: Define and prepare Hare quota arguments</h3>
-<p>Hare quota is the number of all votes in given city divided by the number of seats for that city. Based on the HQ we will create a table where we have: - electoral quota for each list: Q = 1 means list gets 1 seat etc. - seats collected fully by the votes quota, quota seats: QS. - remains R from the quota: votes who didn’t got any seats to the list. - percentage P of the votes of the list from all votes.</p>
+<p>Hare quota is the number of all votes in given city divided by the number of seats for that city. Based on the HQ we will create a table where we have:</p>
+<ul>
+<li>electoral quota for each list: Q = 1 means list gets 1 seat etc.</li>
+<li>seats collected fully by the votes quota, quota seats: QS.</li>
+<li>remains R from the quota: votes who didn’t got any seats to the list.</li>
+<li>percentage P of the votes of the list from all votes.</li>
+</ul>
 <div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">def</span> hare(df, s):</a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">    <span class="co">#total votes:</span></a>
 <a class="sourceLine" id="cb2-3" data-line-number="3">    ts <span class="op">=</span> np.<span class="bu">sum</span>(df.sumv, axis <span class="op">=</span> <span class="dv">0</span>)</a>
@@ -2687,8 +2691,8 @@ $(document).ready(function () {
 </div>
 <div id="we-all-love-pies" class="section level2">
 <h2>WE ALL LOVE PIES</h2>
-<p>This now the part I just decided to finish up the pie plot using R plotly, obviously this wasn’t my first choice either, but it works with no problems what so ever. Ironically the the winning party which is NIDA Tounes is represented with blue while Al nahdha is represented in red which is the first’s color. <em>we only used mainland data here we haven’t integrated abroad citizens votes</em> <div id="htmlwidget-1e5f452f93ab0361a21f" style="width:672px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1e5f452f93ab0361a21f">{"x":{"visdat":{"5f4e4f20b9fc":["function () ","plotlyVisDat"]},"cur_data":"5f4e4f20b9fc","attrs":{"5f4e4f20b9fc":{"labels":{},"values":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"labels":["قائمة حزب حركة النهضة","قائمة حركة نداء تونس","قائمة حزب الاتحاد الوطني الحر","قائمة حزب آفاق تونس","قائمة الجبهة الشعبية","قائمة حزب التيار الديمقراطي","قائمة حزب التحالف","قائمة حزب المؤتمر من أجل الجمهورية","القائمة المستقلة الإقلاع","قائمة حزب صوت الفلاحين","قائمة  تيار المحبة","قائمة حركة الشعب","قائمة  الجبهة الشعبية","قائمة الجبهة الوطنية للإنقاذ","قائمة الوفاء لمشروع الشهيد","قائمة الحزب الجمهوري","قائمة حزب المبادرة","قائمة المجد الجريد"],"values":[59,80,16,8,14,4,1,4,1,1,2,2,1,1,1,1,2,1],"type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script></p>
+<p>This now the part I just decided to finish up the pie plot using R plotly, obviously this wasn’t my first choice either, but it works with no problems what so ever. Ironically the the winning party which is NIDA Tounes is represented with blue while Al nahdha is represented in red which is the first’s color. <em>we only used mainland data here we haven’t integrated abroad citizens votes</em> <div id="htmlwidget-035537ee839554725929" style="width:672px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-035537ee839554725929">{"x":{"visdat":{"124245e8f0b3":["function () ","plotlyVisDat"]},"cur_data":"124245e8f0b3","attrs":{"124245e8f0b3":{"labels":{},"values":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"pie"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"hovermode":"closest","showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"labels":["قائمة حزب حركة النهضة","قائمة حركة نداء تونس","قائمة حزب الاتحاد الوطني الحر","قائمة حزب آفاق تونس","قائمة الجبهة الشعبية","قائمة حزب التيار الديمقراطي","قائمة حزب التحالف","قائمة حزب المؤتمر من أجل الجمهورية","القائمة المستقلة الإقلاع","قائمة حزب صوت الفلاحين","قائمة  تيار المحبة","قائمة حركة الشعب","قائمة  الجبهة الشعبية","قائمة الجبهة الوطنية للإنقاذ","قائمة الوفاء لمشروع الشهيد","قائمة الحزب الجمهوري","قائمة حزب المبادرة","قائمة المجد الجريد"],"values":[59,80,16,8,14,4,1,4,1,1,2,2,1,1,1,1,2,1],"type":"pie","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(255,255,255,1)"}},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script></p>
 </div>
 <div id="summary-and-conclusion" class="section level2">
 <h2>Summary and conclusion:</h2>
