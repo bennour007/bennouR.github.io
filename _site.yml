@@ -9,3 +9,5 @@ navbar:
       href: projects.html
     - text: "Research"
       href: research.html
+    - text: "Others"
+      href: others.html

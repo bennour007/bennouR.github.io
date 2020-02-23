@@ -1,0 +1,15 @@
+---
+title: "Other pages in this site"
+output: 
+  html_document:
+    highlight: tango
+    theme: readable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+- [corruption](docs/berkleyapp.html).
+
+- [stat150](https://bennour-med-hsin.shinyapps.io/new_folder/).

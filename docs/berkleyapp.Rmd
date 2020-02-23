@@ -1,0 +1,34 @@
+---
+title: "Application"
+author: "Bennour Mohamed Hsin"
+date: "23 February 2020"
+output:
+  html_document:
+    highlight: tango
+    theme: readable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+\
+\
+Dear Sir,
+\
+\
+
+I am writing to apply for the position of part-time research assistant in bribery and trade. I am currently a student at TBS(Tunis Business School) doing my master’s in Business Analytics and where I am among the teaching staff in statistics. I also conducted my undergraduate studies in ISG(institut supérieur de gestion) Sousse, in econometrics.
+
+Helping with understanding the behavior regarding corruption and especially bribery would be a great experience for me and an aspiration to my master’s thesis.
+
+I regard this research with tremendous rigour and diligence, as it is multidisciplinary, depending on skills in analyzing economical, statistical, social, and psychological data, which makes collecting this data efficiently and with the best quality possible a challenging job.
+
+This is my personal website portal, which I have constructed a while ago, it contains links to my [GitHub](https://github.com/bennour007?tab=repositories) repositories where you can find code samples of my previous and current projects, as well as some drafts to some of the articles, especially on the [elections](https://bennour007.github.io/bennouR.github.io/docs/elections2014/report.html) [project](https://bennour007.github.io/bennouR.github.io/research.html).
+
+You can reach me on +216 26260993 and on my email hsin.bennour@gmail.com
+
+Thank you for your time and consideration, looking forward to speaking with you directly to discuss this opportunity as well as my motivation and skills.
+
+Sincerely.
+
+*Bennour Mohamed Hsin*
