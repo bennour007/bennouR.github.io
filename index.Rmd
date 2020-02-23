@@ -27,5 +27,5 @@ If you want to know more about me, you can just click here to get my [resume](do
 \
 \
 
-### [NEW ARTICLE](docs/elections2014/report.html)
+### [NEW ARTICLE](https://raw.githubusercontent.com/bennour007/elections/master/report_01.html)
 2014 elections report with mainland votes
